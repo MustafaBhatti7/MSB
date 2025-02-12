@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="MLogo.jpg" type="image/x-icon">
+    <title>
+        Mustafa_120
+    </title>
+    <style>
+        body{
+            background-color: rgba(2, 255, 255, 0.792);
+            background-image: url(Website.jpg);
+        }
+        #info {
+            display: none; /* Initially hidden */
+        }
+        #aboutMeSection {
+            display: none; /* Initially hidden */
+        }
+        #family-section {
+            display: none; /* Initially hidden */
+        }
+        #trip-section {
+            display: none; /* Initially hidden */
+        }
+        button {
+            background-color: #418a1c; /* Light purple */
+            color: white; /* Text color */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Padding for the button */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 20px; /* Font size */
+            margin-top: 20px; /* Space above the button */
+        }
+        button:hover {
+            background-color: #53d14a; /* Slightly darker purple on hover */
+        }
+        .card-container {
+            display: flex;
+            justify-content: center; /* Center the cards horizontally */
+            gap: 10px; /* Space between the cards */
+        }
+        .card {
+            background-image: url(Design2.jpg);
+            background-size: cover; background-position: center;
+            border: 2px solid #7031c8; /* Border around the card */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the card */
+            text-align: center; /* Center the content */
+        }
+        .card2 {
+            background-color: #bddae8;
+            border: 2px solid #7031c8; /* Border around the card */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the card */
+            text-align: center; /* Center the content */
+        }
+
+        .info-container {
+            display: flex; /* Arrange elements in a row */
+            justify-content: center; /* Center the items horizontally */
+            gap: 20px; /* Space between the sections */
+            margin-top: 20px;
+        }
+
+        
+        </style>
+
+
+    <script>
+        function toggleInfo() {
+            const infoDiv = document.getElementById('info');
+            if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+                infoDiv.style.display = 'block'; // Show the info
+            } else {
+                infoDiv.style.display = 'none'; // Hide the info
+            }
+        }
+        function toggleAboutMe() {
+            const aboutMeDiv = document.getElementById('aboutMeSection');
+            if (aboutMeDiv.style.display === 'none' || aboutMeDiv.style.display === '') {
+                aboutMeDiv.style.display = 'block'; // Show the "About Me" section
+            } else {
+                aboutMeDiv.style.display = 'none'; // Hide the "About Me" section
+            }
+        }
+        function toggleFamily() {
+            const familyDiv = document.getElementById('family-section');
+            if (familyDiv.style.display === 'none' || familyDiv.style.display === '') {
+                familyDiv.style.display = 'block'; // Show the "About Me" section
+            } else {
+                familyDiv.style.display = 'none'; // Hide the "About Me" section
+            }
+        }
+        function toggleTrip() {
+            const tripDiv = document.getElementById('trip-section');
+            if (tripDiv.style.display === 'none' || tripDiv.style.display === '') {
+                tripDiv.style.display = 'block'; // Show the "About Me" section
+            } else {
+                tripDiv.style.display = 'none'; // Hide the "About Me" section
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+
+<img src="Mustafa.png" alt="Mustafa"
+    <img src="Mustafa.png" alt="Mustafa" style="margin-left: 530px;">
+    <div></div>
+    <u style="font-size: 50px; color: rgb(15, 21, 138); margin-left: 450px;">Hi I'm Mustafa</u>
+    <div></div>
+    <div class="card-container">
+    <div class="card" style="margin-left: 20px;">
+        <h2>Welcome to My Page!</h2>
+        <button onclick="toggleAboutMe()">About Me</button>
+    </div>
+    <div class="card">
+        <h2>Click here to learn about my family!</h2>
+        <button onclick="toggleFamily()">Click Here</button>
+    </div>
+    <div class="card">
+        <h2>Click here to learn about my Trips!</h2>
+        <button onclick="toggleTrip()">Click Here</button>
+    </div>
+    </div>
+    <div class="info-container">
+    <div id="aboutMeSection">
+        <div class="card2">
+        <div style="font-size: 20px; color: cornflowerblue;">Hello I am Mustafa and I am 12 years old.
+            I am in class 7 and I am trying to learn coding.
+        </div>
+        <div style="font-size: 20px; color: crimson;">I love multiple sports such as football, table tennis and badminton. My favourite is football no doubt but I enjoy playing all these sports.</div>
+        <div style="font-size: 20px; color: crimson;">I am good in computer science although I'm not that advanced but I enjoy it.</div>
+        <div style="font-size: 20px; color: crimson;">My dream is to become an athlete or an engineer but if I want to be an engineer I have to be an expert in maths. But that's a good thing because I like maths.</div>
+        </div>
+    </div>
+
+    <div id="family-section">
+        <div class="card2">
+        <div style="font-size: 20px; color: crimson;">I have two siblings, one is a brother and the other is a sister. My brother is 22 years old and my sister is 19 years old.</div>
+        <div style="font-size: 20px; color: crimson;">Well that makes me the youngest child even though it's fun but I didn't want to be the youngest in my family.</div>
+        <div style="font-size: 20px; color: crimson;">We have enjoyed a lot of time together mostly when we go on trips. Our most recent trip was when we went to Hunza valley in Pakistan.</div>
+        </div>
+    </div>
+
+    <div id="trip-section">
+        <div class="card2">
+        <div style="font-size: 21px; color: crimson;">Hunza valley:</div>
+        <div style="font-size: 20px; color: crimson;">The trip was like a 20-hour road trip. We were very tired but our excitement levels were through the roof. We went hiking, jet skiing, and I even went ziplining.</div>
+        
+        <div style="font-size: 21px; color: crimson;">A Trip to the Most Holy place on Earth:</div>
+        <div style="font-size: 20px; color: crimson;">Well the most holy place on the Earth is Makkah. We went to Dubai by plane and then went to Makkah by road which was again a 20-hour drive. We had a lot of fun discovering the city.</div>
+        
+        <div style="font-size: 20px; color: rgb(158, 27, 23);">Well those were the latest trips.</div>
+        </div>
+    </div>
+
+    </div>
+
+                
+            </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <body> 
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date" style="font-size: 40px; color: azure;margin-left: 460px; margin-top: 70px;">Time goes so fast</div>
+            <div class="timeline-content">
+              <div style="font-size: 28px;color: rgb(25, 225, 225);margin-left: 560px;margin-top: 40px;"  <h3>2024</h3>
+            </div>
+    </div>
+</body> -->
